@@ -1,3 +1,18 @@
+- Install Rapid API from extensions.
+- Use `npx create-react-app ./` command to initialize the React JS project.
+- Use [https://mui.com/material-ui/](https://mui.com/material-ui/) for Material UI.
+- Use `npm install --legacy-peer-deps` command to install the dependencies exactly mentioned in package.json file.
+- Add the extension 'ES7+ React/Redux/React-Native snippets' & use `rafce` for basic script in js file.
+- Add the extensions npm Intellisense and Path Intellisense for the purpose of inporting the files on pressing ctrl+space.
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
