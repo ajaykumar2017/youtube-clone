@@ -3,7 +3,10 @@
 - Use [https://mui.com/material-ui/](https://mui.com/material-ui/) for Material UI.
 - Use `npm install --legacy-peer-deps` command to install the dependencies exactly mentioned in package.json file.
 - Add the extension 'ES7+ React/Redux/React-Native snippets' & use `rafce` for basic script in js file.
-- Add the extensions npm Intellisense and Path Intellisense for the purpose of inporting the files on pressing ctrl+space.
+- Add the extensions npm Intellisense and Path Intellisense for the purpose of importing the files on pressing ctrl+space.
+- Sign up for Rapid API for api purpose [https://rapidapi.com/](https://rapidapi.com/)
+- Use the api [https://rapidapi.com/ytdlfree/api/youtube-v31/](https://rapidapi.com/ytdlfree/api/youtube-v31/) for this project
+
 
 
 
