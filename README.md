@@ -1,3 +1,4 @@
+This project is hosted live here [https://subtle-pie-459803.netlify.app/](https://subtle-pie-459803.netlify.app/)
 - Install Rapid API from extensions.
 - Use `npx create-react-app ./` command to initialize the React JS project.
 - Use [https://mui.com/material-ui/](https://mui.com/material-ui/) for Material UI.
@@ -6,6 +7,14 @@
 - Add the extensions npm Intellisense and Path Intellisense for the purpose of importing the files on pressing ctrl+space.
 - Sign up for Rapid API for api purpose [https://rapidapi.com/](https://rapidapi.com/)
 - Use the api [https://rapidapi.com/ytdlfree/api/youtube-v31/](https://rapidapi.com/ytdlfree/api/youtube-v31/) for this project
+
+# Deploying Application Live
+- We will use [https://netlify.com](https://netlify.com] to deploy our application.
+- Open Terminal and run the command `npm run build`
+- Now right click on build folder in VS Code
+- Open Netlify and navigate to sites and upload build folder from file explorer.
+- Wait for couple of seconds and site is ready now.
+
 
 
 
