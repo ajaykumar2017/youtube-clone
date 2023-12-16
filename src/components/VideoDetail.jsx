@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import ReactPlayer from "react-player";
-import { Typography, Box, Stack } from "@mui/material";
+import { Typography, Card, Box, Stack } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 import { Videos, Loader } from "./";
@@ -20,9 +20,9 @@ const VideoDetail = () => {
       .then((data) => setVideos(data.items))
   }, [id]);
 
-  if(!videoDetail?.snippet) return <Loader />;
+  if (!videoDetail?.snippet) return <Loader />;
 
-  const { snippet: { title, channelId, channelTitle }, statistics: { viewCount, likeCount } } = videoDetail;
+  const { snippet: { title, channelId, channelTitle, description }, statistics: { viewCount, likeCount } } = videoDetail;
 
   return (
     <Box minHeight="95vh">
@@ -35,7 +35,7 @@ const VideoDetail = () => {
             </Typography>
             <Stack direction="row" justifyContent="space-between" sx={{ color: "#fff" }} py={1} px={2} >
               <Link to={`/channel/${channelId}`}>
-                <Typography variant={{ sm: "subtitle1", md: 'h6' }}  color="#fff" >
+                <Typography variant={{ sm: "subtitle1", md: 'h5' }} color="#fff" >
                   {channelTitle}
                   <CheckCircleIcon sx={{ fontSize: "12px", color: "gray", ml: "5px" }} />
                 </Typography>
@@ -48,6 +48,13 @@ const VideoDetail = () => {
                   {parseInt(likeCount).toLocaleString()} likes
                 </Typography>
               </Stack>
+            </Stack>
+            <Stack direction="row" justifyContent="space-between" sx={{ color: "#fff" }} py={1} px={2} >
+              <Card sx={{ width: '100%', boxShadow: "none", borderRadius: '10px', backgroundColor: "#1E1E1E" }}>
+                <Typography variant="body2" sx={{ opacity: 0.8, color: '#fff', margin: '10px' }}>
+                  {description}
+                </Typography>
+              </Card>
             </Stack>
           </Box>
         </Box>
